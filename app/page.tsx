@@ -135,10 +135,17 @@ export default function Page() {
       <div className="flex-1">
         {activeViewMode === 'timeline' && (
           <div>
-            {/* Dadaepo Timer Widget for Day 2 */}
+            {/* Dadaepo Timer Widget & Parking Tip Card for Day 2 */}
             {activeDayNumber === 2 && (
               <div className="px-4 pt-3 pb-0">
                 <DadaepoTimer />
+                {currentDay.parkingTip && (
+                  <BeachTipCard
+                    parkingTip={currentDay.parkingTip}
+                    cafes={['차선책 (뷰 1위)', '랑데자뷰 (고층 뷰)', '프랭크커핀바', '오설록']}
+                    beachName="광안리해수욕장"
+                  />
+                )}
               </div>
             )}
 

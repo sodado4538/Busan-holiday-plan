@@ -45,6 +45,7 @@ export interface DayItinerary {
   date: string;
   dayOfWeek: string;
   title: string;
+  parkingTip?: ParkingTipInfo;
   schedule?: ScheduleItem[];
   scenarios?: DayScenario[];
 }
