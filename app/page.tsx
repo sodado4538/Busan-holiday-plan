@@ -17,8 +17,8 @@ export default function Page() {
   const [activeDayNumber, setActiveDayNumber] = useState<number>(1);
   const [activeViewMode, setActiveViewMode] = useState<'timeline' | 'map'>('timeline');
 
-  // Day 3 Beach Scenario selection state (gwangalli | songjeong | songdo)
-  const [activeScenarioId, setActiveScenarioId] = useState<string>('gwangalli');
+  // Day 3 Beach Scenario selection state (songjeong | gijang | songdo)
+  const [activeScenarioId, setActiveScenarioId] = useState<string>('songjeong');
 
   const currentDay = data.days.find((d) => d.dayNumber === activeDayNumber) || data.days[0];
 
